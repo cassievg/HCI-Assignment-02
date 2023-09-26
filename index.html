@@ -1,0 +1,118 @@
+<html>
+    <head>
+        <title>HCI ASSIGNMENT-02</title>
+    </head>
+    <style>
+        table{
+            border-radius: 5px;
+            border-color:#091540;
+            width:100%
+        }
+
+        h1{
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size:50px;
+            color:#BB9BB0;
+            text-align:center
+        }
+
+        h2{
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size:25px;
+            color:#BB9BB0;
+            text-align:center;
+        }
+
+        body{
+            background:url("background.jfif");
+            background-position:center;
+            background-repeat:no-repeat;
+            background-size:cover
+        }
+
+        div{
+            background-color:white
+        }
+
+        td{
+            height:75px
+        }
+    </style>
+    <body background="background.jfif">
+        <div>
+            <h1>HCI Assignment 02</h1>
+        </div>
+        <fieldset>
+            <form>
+                <table>
+                    <tr>
+                        <td>
+                            <label for="fname">First Name: </label>
+                            <input type="text" id="fname" name="fname">
+                            <label for="lname">Last Name: </label>
+                            <input type="text" id="lname" name="lname">
+                        </td>
+                        <td rowspan="4">
+                            <img src="dog.webp" style="width:400px">
+                            <p>Do you have pets?</p>
+                            <label for="y">Yes </label>
+                            <input type="radio" id="y" name="pet" value="y">
+                            <label for="n">No </label>
+                            <input type="radio" id="n" name="pet" value="n">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>Gender: </p>
+                            <label for="m">Male </label>
+                            <input type="radio" id="m" name="gender" value="m">
+                            <label for="f">Female </label>
+                            <input type="radio" id="f" name="gender" value="f">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="bday">Birthday: </label>
+                            <input type="date" id="bday" name="bday">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="nationality">Nationality: </label>
+                            <select name="nationality" id="nationality">
+                                <option value="Indonesian">Indonesian</option>
+                                <option value="Malaysian">Malaysian</option>
+                                <option value="Singaporean">Singaporean</option>
+                                <option value="Chinese">Chinese</option>
+                                <option value="Japanese">Japanese</option>
+                                <option value="Korean">Korean</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <div>
+                                <h2>What are your hobbies?</h2>
+                            </div>
+                            <label for="gaming">Gaming</label>
+                            <input type="checkbox" id="gaming" name="gaming"><br>
+                            <label for="singing">Singing</label>
+                            <input type="checkbox" id="singing" name="singing"><br>
+                            <label for="drawing">Drawing</label>
+                            <input type="checkbox" id="drawing" name="drawing"><br>
+                            <label for="sports">Sports</label>
+                            <input type="checkbox" id="sports" name="sports"><br>
+                            <label for="designing">Designing</label>
+                            <input type="checkbox" id="designing" name="designing">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="submit" value="submit">
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </fieldset>
+    </body>
+</html>
